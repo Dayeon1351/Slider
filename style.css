@@ -1,0 +1,46 @@
+body{
+    font-family: fantasy;
+    /* width: 100%; */
+    margin: 0;
+}
+
+button{
+    all:unset;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    color: black;
+    top:280px;
+}
+.next{
+    left: 80%;
+}
+.prev{
+    right: 80%;
+}
+
+.slider__item{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    top: 0;
+    transition: all .5s ease-in-out;
+}
+
+.slider__item:nth-child(odd){
+    background-color: darksalmon;
+}
+.slider__item:nth-child(even){
+    background-color:yellow
+}
+.showing{
+    opacity: 1;
+    z-index: 1;
+    transform: none;
+}
