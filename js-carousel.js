@@ -8,7 +8,6 @@ let counter = 1;
 const size = carouselImages[0].clientWidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-// Buttons
 nextBtn.addEventListener('click', ()=> {
   if(counter >= carouselImages.length -1) return;
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
@@ -23,16 +22,16 @@ prevBtn.addEventListener('click', ()=> {
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
-// Jump to First/Last Slide
+
 carouselSlide.addEventListener('transitionend', () => {
   console.log(carouselImages[counter]);
   if (carouselImages[counter].id === 'lastClone'){
-    carouselSlide.style.transition = 'none'; // 트랜지션 효과 없애기
-    counter = carouselImages.length -2; // couter 초기화
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; // 실제 마지막 이미지로 이동.
+    carouselSlide.style.transition = 'none';
+    counter = carouselImages.length -2;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   } else if (carouselImages[counter].id === 'firstClone') {
     carouselSlide.style.transition = 'none';
-    counter = carouselImages.length - counter; // couter 초기화
+    counter = carouselImages.length - counter;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
 });
