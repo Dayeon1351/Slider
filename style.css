@@ -18,6 +18,16 @@ button{
 .prev{
     right: 80%;
 }
+#back{
+    all: unset;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    z-index:3;
+    margin: 10px;
+    cursor: pointer;
+}
+
 
 .slider__item{
     width: 100vw;

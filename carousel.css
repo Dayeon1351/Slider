@@ -16,10 +16,17 @@ button{
 .prev{
     right: 80%;
 }
-
+#back{
+    all: unset;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    z-index:3;
+    margin: 10px;
+    cursor: pointer;
+}
 .carousel-container{
     width: 100%;
-    background-color: brown;
     overflow: hidden;
     display: flex;
   }
@@ -35,6 +42,7 @@ h1{
     width: 100vw;
     height: 100vh;
     margin:0;
+    color: white;
 }
 
 h1:nth-child(odd){
