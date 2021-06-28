@@ -1,0 +1,45 @@
+body{
+    font-family: fantasy;
+    margin: 0;
+}
+button{
+    all:unset;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    color: black;
+    top:280px;
+}
+.next{
+    left: 80%;
+}
+.prev{
+    right: 80%;
+}
+
+.carousel-container{
+    width: 100%;
+    background-color: brown;
+    overflow: hidden;
+    display: flex;
+  }
+  .carousel-slide{
+    display: flex;
+  }
+
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+}
+
+h1:nth-child(odd){
+    background-color: darksalmon;
+}
+h1:nth-child(even){
+    background-color:yellow
+}
